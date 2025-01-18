@@ -1,36 +1,8 @@
-# Parallel Requests
-
-Parallel Requests is a Python project that allows you to execute HTTP requests in parallel using the asyncio and aiohttp libraries. This tool is designed to improve efficiency and reduce waiting time when making multiple HTTP requests. With Parallel Requests, you can send GET, POST, PUT, and DELETE requests simultaneously, collecting responses asynchronously and easily managing the results.
-
-    **Features**:
-
-    / Parallel execution of HTTP requests: Send multiple requests simultaneously to reduce waiting times.
-
-    - Support for common HTTP methods: Perform GET, POST, PUT, and DELETE requests.
-
-    - Asynchronous management: Utilizes asyncio and aiohttp for efficient request handling.
-
-    - Execution time calculation: Measures the time taken to execute each request.
-
-    - Ease of use: Simple interface for adding and managing requests.
-
-
-# Installation
-
-Puoi installare Parallel Requests usando il file setup.py. Nella directory principale del progetto, esegui il seguente comando:
-
-```python
-pip install .
-```
-
-## Example
-
-```python
 from parallel_requests import RequestExecutor 
 from parallel_requests import Request
 import asyncio
 
-# List example
+# Lista di URL di esempio
 urls = [
     "https://www.google.com",
     "https://www.bing.com",
@@ -87,7 +59,8 @@ urls = [
     "https://www.harpersbazaar.com",
     "https://www.marieclaire.com"
 ]
-                                                                                  
+
+                                                                                   
 def main():
         print("Urls: ", len(urls))
         executor = RequestExecutor()       
@@ -100,11 +73,9 @@ def main():
         responses = executor.run()
         print("Responses: ", len(responses))
         for response in responses: 
-            print(f"Status Code: {response.status_code}, Execution Time: {response.execution_time} seconds") 
+            print(f"Status Code: {response.status_code}, Execution Time: {response.execution_time} sec") 
 
         print( "Total: exec" , executor.execution_time)
 
 
 main()
-```
-
