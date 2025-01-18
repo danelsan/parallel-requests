@@ -4,7 +4,7 @@ Parallel Requests is a Python project that allows you to execute HTTP requests i
 
     **Features**:
 
-    / Parallel execution of HTTP requests: Send multiple requests simultaneously to reduce waiting times.
+    - Parallel execution of HTTP requests: Send multiple requests simultaneously to reduce waiting times.
 
     - Support for common HTTP methods: Perform GET, POST, PUT, and DELETE requests.
 
@@ -14,6 +14,12 @@ Parallel Requests is a Python project that allows you to execute HTTP requests i
 
     - Ease of use: Simple interface for adding and managing requests.
 
+
+# GitHub Source
+
+You can find source files in:
+
+[https://github.com/danelsan/parallel-requests](https://github.com/danelsan/parallel-requests)
 
 # Installation
 

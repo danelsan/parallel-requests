@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.4' 
-DESCRIPTION = 'Call parallel request Pyhton'
+VERSION = '0.0.5' 
+DESCRIPTION = 'Calling parallel request Pyhton'
 
 setup(
     name="parallel_reqs",
@@ -21,7 +21,7 @@ setup(
     description=DESCRIPTION,
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/tuo_username/parallel_requests",
+    url="https://github.com/danelsan/parallel-requests",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
