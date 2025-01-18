@@ -28,6 +28,7 @@ docker:
 	docker run --rm -ti -w /app -v $(PWD):/app python /bin/bash
 
 push:
+	pip install twine
 	python setup.py sdist bdist_wheel
 	twine upload dist/*
 

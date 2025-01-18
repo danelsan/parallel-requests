@@ -26,7 +26,7 @@ make install
 Puoi installare Parallel Requests usando il file setup.py. Nella directory principale del progetto, esegui il seguente comando:
 
 ```python
-pip install parallel-reqs
+pip install parallel_reqs
 ```
 
 ## Example

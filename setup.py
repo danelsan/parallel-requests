@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1' 
+VERSION = '0.0.2' 
 DESCRIPTION = 'Call parallel request Pyhton'
 
 setup(
-    name="parallel-reqs",
+    name="parallel_reqs",
     version=VERSION,
-    packages=find_packages(include=['paralle_reqs']),
+    packages=find_packages(),
     install_requires=[
         "aiohttp",
     ],
@@ -15,7 +15,6 @@ setup(
             'run=parallel_reqs.main:main',
         ],
     },
-    package_dir={'': 'parallel_reqs'},
     include_package_data=True,
     author="Daniele Frulla",
     author_email="daniele.frulla@newstechnology.eu",
