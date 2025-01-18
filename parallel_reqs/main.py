@@ -1,6 +1,5 @@
-from parallel_requests import RequestExecutor 
-from parallel_requests import Request
-import asyncio
+from parallel_reqs import RequestExecutor 
+from parallel_reqs import Request
 
 # Lista di URL di esempio
 urls = [

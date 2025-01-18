@@ -4,18 +4,18 @@ VERSION = '0.0.1'
 DESCRIPTION = 'Call parallel request Pyhton'
 
 setup(
-    name="parallel_requests",
+    name="parallel-reqs",
     version=VERSION,
-    packages=find_packages(include=['request', 'response']),
+    packages=find_packages(include=['paralle_reqs']),
     install_requires=[
         "aiohttp",
     ],
     entry_points={
         'console_scripts': [
-            'run=app.main:main',
+            'run=parallel_reqs.main:main',
         ],
     },
-    package_dir={'': 'parallel_requests'},
+    package_dir={'': 'parallel_reqs'},
     include_package_data=True,
     author="Daniele Frulla",
     author_email="daniele.frulla@newstechnology.eu",

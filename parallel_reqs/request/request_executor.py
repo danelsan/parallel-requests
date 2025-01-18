@@ -2,7 +2,7 @@ import aiohttp
 import asyncio
 import time
 from .requests import Request
-from parallel_requests.response import Response
+from parallel_reqs.response import Response
 
 class RequestExecutor:
     def __init__(self, page_size = 500):
