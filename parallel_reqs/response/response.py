@@ -1,3 +1,5 @@
+import json
+
 class Response:
     def __init__(self, status_code, headers, text, execution_time):
         self._status_code = int(status_code)
@@ -30,3 +32,8 @@ class Response:
     def execution_time(self): 
         return self._execution_time
     
+    def json(self):
+        try:
+            return json.loads( self.text )
+        except json.JSONDecodeError as e:
+            raise f"Errore di parsing JSON: {e}"
