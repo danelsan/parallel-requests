@@ -21,7 +21,7 @@ clean:
 	rm dist build parallel_reqs.egg-info -fr
 
 # Test del progetto (assumendo che i test siano in una directory tests/)
-test:
+test: install
 	$(PYTHON) -m unittest discover -s tests
 
 docker:
