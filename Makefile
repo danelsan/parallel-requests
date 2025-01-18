@@ -18,7 +18,7 @@ run:
 clean:
 	find . -type f -name '*.pyc' -delete
 	find . -type d -name '__pycache__' -delete
-	rm dist build parallel_reqs/parallel_reqs.egg-info -fr
+	rm dist build parallel_reqs.egg-info -fr
 
 # Test del progetto (assumendo che i test siano in una directory tests/)
 test:
